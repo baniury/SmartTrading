@@ -6,6 +6,8 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    env:
+      TWELVE_API_KEY: ${{ secrets.TWELVE_API_KEY }}
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4

@@ -8,6 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       TWELVE_API_KEY: ${{ secrets.TWELVE_API_KEY }}
+       DATABASE_URL: ${{ secrets.DATABASE_URL }}
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4

@@ -12,7 +12,7 @@ if not DB_URL:
     raise RuntimeError("Brak DATABASE_URL w env (GitHub Secrets).")
 
 TZ = "Europe/Warsaw"
-SYMBOLS = ["EUR/USD", "USD/JPY", "XAU/USD"]  # jeśli któryś symbol będzie error, poprawimy
+SYMBOLS = ["EUR/USD", "USD/JPY", "XAU/USD", "DAX"]  # jeśli któryś symbol będzie error, poprawimy
 INTERVAL = "15min"
 TIMEFRAME = "M15"
 OUTPUTSIZE = 3  # bierzemy kilka ostatnich świec, żeby UPSERT poprawiał ewentualne korekty
